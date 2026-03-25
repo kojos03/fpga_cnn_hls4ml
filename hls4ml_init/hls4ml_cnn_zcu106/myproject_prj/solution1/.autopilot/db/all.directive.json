@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "myproject",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "myproject"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls4ml_init/hls4ml_cnn_zcu106/build_prj.tcl",
+    "sourceLine": 169,
+    "success": true
+  }
+]

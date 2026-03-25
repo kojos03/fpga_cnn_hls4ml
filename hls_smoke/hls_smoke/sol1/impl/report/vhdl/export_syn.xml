@@ -1,0 +1,131 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.1.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>5.000</TargetClockPeriod>
+    <AchievedClockPeriod>NA</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>NA</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>NA</CP_SYNTH>
+    <CP_TARGET>5.000</CP_TARGET>
+    <SLACK_FINAL>NA</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>NA</SLACK_SYNTH>
+    <TIMING_MET>NA</TIMING_MET>
+    <TNS_FINAL>NA</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>NA</TNS_SYNTH>
+    <WNS_FINAL>NA</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>NA</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>0</DSP>
+      <FF>84</FF>
+      <LATCH>0</LATCH>
+      <LUT>82</LUT>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>624</BRAM>
+      <CLB>0</CLB>
+      <DSP>1728</DSP>
+      <FF>460800</FF>
+      <LUT>230400</LUT>
+      <URAM>96</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="U0" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="add_axi" DISPNAME="U0" RTLNAME="add_axi">
+      <SubModules count="1">CTRL_s_axi_U</SubModules>
+      <Resources FF="84" LUT="82"/>
+    </RtlModule>
+    <RtlModule CELL="U0/CTRL_s_axi_U" DEPTH="1" TYPE="resource" MODULENAME="CTRL_s_axi" DISPNAME="CTRL_s_axi_U" RTLNAME="add_axi_CTRL_s_axi">
+      <Resources FF="84" LUT="82"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="0.667" DATAPATH_LOGIC_DELAY="0.307" DATAPATH_NET_DELAY="0.360" ENDPOINT_PIN="CTRL_s_axi_U/rdata_data_reg[0]/D" LOGIC_LEVELS="4" MAX_FANOUT="3" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/int_a_reg[0]/C">
+      <CELL NAME="CTRL_s_axi_U/int_a_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="261" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/rdata_data[0]_i_5" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="246" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/rdata_data_reg[0]_i_2" PRIMITIVE_TYPE="CLB.MUXF.MUXF7" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="246" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/rdata_data[0]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="201" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/rdata_data_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="201" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.624" DATAPATH_LOGIC_DELAY="0.427" DATAPATH_NET_DELAY="0.197" ENDPOINT_PIN="CTRL_s_axi_U/int_c_reg[15]/D" LOGIC_LEVELS="4" MAX_FANOUT="3" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/int_a_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_a_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="261" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c[7]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="add_axi.vhd" LINE_NUMBER="145" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[7]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="146" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[15]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="146" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[15]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="265" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.623" DATAPATH_LOGIC_DELAY="0.427" DATAPATH_NET_DELAY="0.196" ENDPOINT_PIN="CTRL_s_axi_U/int_c_reg[13]/D" LOGIC_LEVELS="4" MAX_FANOUT="3" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/int_a_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_a_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="261" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c[7]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="add_axi.vhd" LINE_NUMBER="145" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[7]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="146" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[15]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="146" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[13]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="265" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.611" DATAPATH_LOGIC_DELAY="0.414" DATAPATH_NET_DELAY="0.197" ENDPOINT_PIN="CTRL_s_axi_U/int_c_reg[14]/D" LOGIC_LEVELS="4" MAX_FANOUT="3" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/int_a_reg[1]/C">
+      <CELL NAME="CTRL_s_axi_U/int_a_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="261" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c[7]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="add_axi.vhd" LINE_NUMBER="145" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[7]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="146" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[15]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="146" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_c_reg[14]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="265" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.605" DATAPATH_LOGIC_DELAY="0.254" DATAPATH_NET_DELAY="0.351" ENDPOINT_PIN="CTRL_s_axi_U/int_gie_reg/D" LOGIC_LEVELS="3" MAX_FANOUT="7" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/waddr_reg[3]/C">
+      <CELL NAME="CTRL_s_axi_U/waddr_reg[3]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="192" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_gie_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="407" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_gie_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="255" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_gie_reg" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="255" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="vhdl/report/add_axi_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="vhdl/report/add_axi_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="vhdl/report/add_axi_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="vhdl/report/add_axi_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="vhdl/report/add_axi_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="vhdl/report/add_axi_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Thu Mar 05 02:33:00 +0200 2026"/>
+    <item NAME="Version" VALUE="2024.1 (Build 5096458 on Sep  5 2024)"/>
+    <item NAME="Project" VALUE="hls_smoke"/>
+    <item NAME="Solution" VALUE="sol1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynquplus"/>
+    <item NAME="Target device" VALUE="xczu7ev-ffvc1156-2-e"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

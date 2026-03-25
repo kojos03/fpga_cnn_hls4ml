@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/bd_smoke/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/bd_smoke/ipshared/6f8f/hdl" --include "../../../../project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/drivers/add_axi_v1_0/src" \
+"../../../bd/bd_smoke/ip/bd_smoke_zynq_ultra_ps_e_0_0/sim/bd_smoke_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/bd_smoke/ip/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0/sim/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,321 @@
+
+*** Running vivado
+    with args -log bd_smoke_add_axi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_smoke_add_axi_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Mar 18 21:10:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_smoke_add_axi_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 641.516 ; gain = 202.109
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/hls_smoke/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_smoke_add_axi_0_0
+Command: synth_design -top bd_smoke_add_axi_0_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4380
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:05:03 . Memory (MB): peak = 2011.406 ; gain = 187.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_smoke_add_axi_0_0' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/synth/bd_smoke_add_axi_0_0.vhd:81]
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'add_axi' declared at 'c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi.vhd:11' bound to instance 'U0' of component 'add_axi' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/synth/bd_smoke_add_axi_0_0.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'add_axi' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi.vhd:39]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'add_axi_CTRL_s_axi' declared at 'c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi_CTRL_s_axi.vhd:12' bound to instance 'CTRL_s_axi_U' of component 'add_axi_CTRL_s_axi' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'add_axi_CTRL_s_axi' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi_CTRL_s_axi.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'add_axi_CTRL_s_axi' (0#1) [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi_CTRL_s_axi.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'add_axi' (0#1) [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'bd_smoke_add_axi_0_0' (0#1) [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/synth/bd_smoke_add_axi_0_0.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi_CTRL_s_axi.vhd:321]
+WARNING: [Synth 8-7129] Port AWADDR[1] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[31] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[30] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[29] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[28] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[27] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[26] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[25] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[24] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[23] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[22] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[21] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[20] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[19] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[18] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[17] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[16] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[3] in module add_axi_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WSTRB[2] in module add_axi_CTRL_s_axi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:05:53 . Memory (MB): peak = 2120.844 ; gain = 296.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:05:58 . Memory (MB): peak = 2120.844 ; gain = 296.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:05:58 . Memory (MB): peak = 2120.844 ; gain = 296.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.304 . Memory (MB): peak = 2120.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/constraints/add_axi_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/constraints/add_axi_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/bd_smoke_add_axi_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/bd_smoke_add_axi_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2202.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2203.402 ; gain = 0.426
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:08:13 . Memory (MB): peak = 2203.402 ; gain = 379.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:08:16 . Memory (MB): peak = 2203.402 ; gain = 379.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/bd_smoke_add_axi_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:08:19 . Memory (MB): peak = 2203.402 ; gain = 379.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'add_axi_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'add_axi_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'add_axi_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'add_axi_CTRL_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:08:21 . Memory (MB): peak = 2203.402 ; gain = 379.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_CTRL_AWADDR[1] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_AWADDR[0] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[31] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[30] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[29] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[28] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[27] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[26] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[25] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[24] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[23] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[22] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[21] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[20] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[19] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[18] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[17] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WDATA[16] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WSTRB[3] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CTRL_WSTRB[2] in module add_axi is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module add_axi.
+WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module add_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:08:53 . Memory (MB): peak = 2203.402 ; gain = 379.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:17:32 . Memory (MB): peak = 2867.441 ; gain = 1043.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+get_param: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2867.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:18:36 . Memory (MB): peak = 2867.590 ; gain = 1043.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:20:05 . Memory (MB): peak = 2886.695 ; gain = 1062.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:26:34 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:26:35 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:26:45 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:26:46 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:26:48 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:26:49 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     2|
+|2     |LUT1   |     1|
+|3     |LUT2   |    23|
+|4     |LUT3   |    32|
+|5     |LUT4   |     5|
+|6     |LUT5   |    20|
+|7     |LUT6   |    21|
+|8     |MUXF7  |     1|
+|9     |FDRE   |    84|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:26:55 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:33:47 . Memory (MB): peak = 3093.715 ; gain = 1186.941
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:35:46 . Memory (MB): peak = 3093.715 ; gain = 1269.500
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 3093.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3093.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8bea3afd
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:43:32 . Memory (MB): peak = 3093.715 ; gain = 2397.984
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 3093.715 ; gain = 0.000
+report_design_analysis: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3093.715 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/bd_smoke_add_axi_0_0_synth_1/bd_smoke_add_axi_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:02:01 . Memory (MB): peak = 3093.715 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_smoke_add_axi_0_0, cache-ID = 807d92724f49502b
+config_ip_cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 3093.715 ; gain = 0.000
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 3093.715 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/bd_smoke_add_axi_0_0_synth_1/bd_smoke_add_axi_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3093.715 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_smoke_add_axi_0_0_utilization_synth.rpt -pb bd_smoke_add_axi_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 18 21:58:42 2026...

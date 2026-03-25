@@ -1,0 +1,77 @@
+Backend: Vitis
+ClockPeriod: 5.0
+ClockUncertainty: 27%
+HLSConfig:
+  LayerName:
+    conv1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    conv1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    fc1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    fc1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    flat:
+      Precision:
+        result: auto
+      Trace: false
+    inp:
+      Precision:
+        result: auto
+      Trace: false
+    out:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    out_softmax:
+      Precision:
+        result: auto
+      Trace: false
+    pool1:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+InputShapes:
+  inp:
+  - 8
+  - 8
+  - 1
+KerasModel: !keras_model 'hls4ml_cnn_zcu106/keras_model.keras'
+OutputDir: hls4ml_cnn_zcu106
+OutputPredictions: null
+OutputShapes:
+  layer9_out:
+  - 2
+Part: xczu7ev-ffvc1156-2-e
+ProjectName: myproject
+Stamp: 7dfbc89a
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

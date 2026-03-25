@@ -1,0 +1,128 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.1.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>5.000</TargetClockPeriod>
+    <AchievedClockPeriod>NA</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>NA</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>NA</CP_SYNTH>
+    <CP_TARGET>5.000</CP_TARGET>
+    <SLACK_FINAL>NA</SLACK_FINAL>
+    <SLACK_ROUTE>NA</SLACK_ROUTE>
+    <SLACK_SYNTH>NA</SLACK_SYNTH>
+    <TIMING_MET>NA</TIMING_MET>
+    <TNS_FINAL>NA</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>NA</TNS_SYNTH>
+    <WNS_FINAL>NA</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>NA</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>13</CLB>
+      <DSP>0</DSP>
+      <FF>84</FF>
+      <LATCH>0</LATCH>
+      <LUT>80</LUT>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>624</BRAM>
+      <CLB>28800</CLB>
+      <DSP>1728</DSP>
+      <FF>460800</FF>
+      <LUT>230400</LUT>
+      <URAM>96</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="U0" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="add_axi" DISPNAME="U0" RTLNAME="add_axi">
+      <SubModules count="1">CTRL_s_axi_U</SubModules>
+      <Resources FF="84" LUT="80"/>
+    </RtlModule>
+    <RtlModule CELL="U0/CTRL_s_axi_U" DEPTH="1" TYPE="resource" MODULENAME="CTRL_s_axi" DISPNAME="CTRL_s_axi_U" RTLNAME="add_axi_CTRL_s_axi">
+      <Resources FF="84" LUT="80"/>
+      <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="0.942" DATAPATH_LOGIC_DELAY="0.132" DATAPATH_NET_DELAY="0.810" ENDPOINT_PIN="CTRL_s_axi_U/int_b_reg[1]/CE" LOGIC_LEVELS="2" MAX_FANOUT="16" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C">
+      <CELL NAME="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="154" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b[15]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="461" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="263" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.942" DATAPATH_LOGIC_DELAY="0.132" DATAPATH_NET_DELAY="0.810" ENDPOINT_PIN="CTRL_s_axi_U/int_b_reg[2]/CE" LOGIC_LEVELS="2" MAX_FANOUT="16" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C">
+      <CELL NAME="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="154" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b[15]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="461" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b_reg[2]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="263" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.938" DATAPATH_LOGIC_DELAY="0.132" DATAPATH_NET_DELAY="0.806" ENDPOINT_PIN="CTRL_s_axi_U/int_b_reg[11]/CE" LOGIC_LEVELS="2" MAX_FANOUT="16" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C">
+      <CELL NAME="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="154" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b[15]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="461" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b_reg[11]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="263" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.938" DATAPATH_LOGIC_DELAY="0.132" DATAPATH_NET_DELAY="0.806" ENDPOINT_PIN="CTRL_s_axi_U/int_b_reg[13]/CE" LOGIC_LEVELS="2" MAX_FANOUT="16" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C">
+      <CELL NAME="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="154" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b[15]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="461" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b_reg[13]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="263" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="0.938" DATAPATH_LOGIC_DELAY="0.132" DATAPATH_NET_DELAY="0.806" ENDPOINT_PIN="CTRL_s_axi_U/int_b_reg[14]/CE" LOGIC_LEVELS="2" MAX_FANOUT="16" SLACK="" STARTPOINT_PIN="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C">
+      <CELL NAME="CTRL_s_axi_U/FSM_onehot_wstate_reg[2]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="154" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b[15]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="461" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <CELL NAME="CTRL_s_axi_U/int_b_reg[14]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="add_axi_CTRL_s_axi.vhd" LINE_NUMBER="263" MODULE_INSTNAME="CTRL_s_axi_U" IS_FUNCINST="0"/>
+      <MODULE_INSTANCES>CTRL_s_axi_U</MODULE_INSTANCES>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="vhdl/report/add_axi_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="vhdl/report/add_axi_failfast_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="vhdl/report/add_axi_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="vhdl/report/add_axi_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="vhdl/report/add_axi_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="vhdl/report/add_axi_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="vhdl/report/add_axi_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Thu Mar 05 02:33:00 +0200 2026"/>
+    <item NAME="Version" VALUE="2024.1 (Build 5096458 on Sep  5 2024)"/>
+    <item NAME="Project" VALUE="hls_smoke"/>
+    <item NAME="Solution" VALUE="sol1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynquplus"/>
+    <item NAME="Target device" VALUE="xczu7ev-ffvc1156-2-e"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="auto"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

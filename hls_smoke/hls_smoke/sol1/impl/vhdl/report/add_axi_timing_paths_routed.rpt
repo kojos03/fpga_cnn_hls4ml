@@ -1,0 +1,231 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date              : Thu Mar  5 02:32:11 2026
+| Host              : DESKTOP-0NKI8SO running 64-bit major release  (build 9200)
+| Command           : report_timing -max_paths 10 -file ./report/add_axi_timing_paths_routed.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu7ev-ffvc1156
+| Speed File        : -2  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[1]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.942ns  (logic 0.132ns (14.011%)  route 0.810ns (85.989%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.525     0.942    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X50Y184        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[2]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.942ns  (logic 0.132ns (14.011%)  route 0.810ns (85.989%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.525     0.942    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X50Y184        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[11]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.938ns  (logic 0.132ns (14.070%)  route 0.806ns (85.930%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.521     0.938    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X51Y184        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[11]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[13]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.938ns  (logic 0.132ns (14.070%)  route 0.806ns (85.930%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.521     0.938    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X51Y184        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[13]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[14]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.938ns  (logic 0.132ns (14.070%)  route 0.806ns (85.930%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.521     0.938    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X51Y184        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[14]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_rstate_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/rdata_data_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.930ns  (logic 0.277ns (29.772%)  route 0.653ns (70.228%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y182        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_rstate_reg[1]/C
+    SLICE_X51Y182        FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.079     0.079 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_rstate_reg[1]/Q
+                         net (fo=6, routed)           0.069     0.148    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_rstate_reg[1]_0
+    SLICE_X51Y182        LUT2 (Prop_E6LUT_SLICEL_I1_O)
+                                                      0.147     0.295 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/rdata_data[15]_i_2/O
+                         net (fo=17, routed)          0.533     0.828    bd_0_i/hls_inst/U0/CTRL_s_axi_U/ar_hs
+    SLICE_X52Y183        LUT6 (Prop_H6LUT_SLICEL_I4_O)
+                                                      0.051     0.879 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/rdata_data[0]_i_1/O
+                         net (fo=1, routed)           0.051     0.930    bd_0_i/hls_inst/U0/CTRL_s_axi_U/rdata_data[0]_i_1_n_0
+    SLICE_X52Y183        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/rdata_data_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[12]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.928ns  (logic 0.132ns (14.227%)  route 0.796ns (85.773%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.511     0.928    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X51Y183        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[12]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[3]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.928ns  (logic 0.132ns (14.227%)  route 0.796ns (85.773%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.511     0.928    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X51Y183        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[5]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.928ns  (logic 0.132ns (14.227%)  route 0.796ns (85.773%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.511     0.928    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X51Y183        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[6]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.928ns  (logic 0.132ns (14.227%)  route 0.796ns (85.773%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y185        FDRE                         0.000     0.000 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/C
+    SLICE_X54Y185        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.080     0.080 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]/Q
+                         net (fo=9, routed)           0.285     0.365    bd_0_i/hls_inst/U0/CTRL_s_axi_U/FSM_onehot_wstate_reg[2]_0
+    SLICE_X54Y185        LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.052     0.417 r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b[15]_i_1/O
+                         net (fo=16, routed)          0.511     0.928    bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b
+    SLICE_X51Y183        FDRE                                         r  bd_0_i/hls_inst/U0/CTRL_s_axi_U/int_b_reg[6]/CE
+  -------------------------------------------------------------------    -------------------
+
+
+
+

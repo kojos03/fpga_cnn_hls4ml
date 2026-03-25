@@ -1,0 +1,272 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Mar 18 22:09:48 2026
+# Process ID         : 1552
+# Current directory  : C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1
+# Command line       : vivado.exe -log bd_smoke_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_smoke_wrapper.tcl
+# Log file           : C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/bd_smoke_wrapper.vds
+# Journal file       : C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-PV75K48
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-2600S CPU @ 2.80GHz
+# CPU Frequency      : 2794 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 6330 MB
+# Swap memory        : 16053 MB
+# Total Virtual      : 22384 MB
+# Available Virtual  : 16448 MB
+#-----------------------------------------------------------
+source bd_smoke_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:45 . Memory (MB): peak = 638.801 ; gain = 202.418
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/hls_smoke/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 658.219 ; gain = 19.418
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.cache/ip 
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 701.359 ; gain = 43.141
+Command: read_checkpoint -auto_incremental -incremental C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.srcs/utils_1/imports/synth_1/bd_smoke_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.srcs/utils_1/imports/synth_1/bd_smoke_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top bd_smoke_wrapper -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11272
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:28 . Memory (MB): peak = 2026.355 ; gain = 186.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_smoke_wrapper' [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/hdl/bd_smoke_wrapper.vhd:18]
+INFO: [Synth 8-3491] module 'bd_smoke' declared at 'c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:347' bound to instance 'bd_smoke_i' of component 'bd_smoke' [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/hdl/bd_smoke_wrapper.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'bd_smoke' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:354]
+INFO: [Synth 8-3491] module 'bd_smoke_add_axi_0_0' declared at 'C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_add_axi_0_0_stub.vhdl:6' bound to instance 'add_axi_0' of component 'bd_smoke_add_axi_0_0' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:504]
+INFO: [Synth 8-638] synthesizing module 'bd_smoke_add_axi_0_0' [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_add_axi_0_0_stub.vhdl:40]
+INFO: [Synth 8-638] synthesizing module 'bd_smoke_ps8_0_axi_periph_0' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:279]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_AIGOFK' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:78]
+INFO: [Synth 8-3491] module 'bd_smoke_ps8_0_axi_periph_imp_auto_pc_0' declared at 'C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'bd_smoke_ps8_0_axi_periph_imp_auto_pc_0' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'bd_smoke_ps8_0_axi_periph_imp_auto_pc_0' [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0_stub.vhdl:78]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_AIGOFK' (0#1) [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'bd_smoke_ps8_0_axi_periph_0' (0#1) [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:279]
+INFO: [Synth 8-3491] module 'bd_smoke_rst_ps8_0_177M_3' declared at 'C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_rst_ps8_0_177M_3_stub.vhdl:6' bound to instance 'rst_ps8_0_177M' of component 'bd_smoke_rst_ps8_0_177M_3' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:590]
+INFO: [Synth 8-638] synthesizing module 'bd_smoke_rst_ps8_0_177M_3' [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_rst_ps8_0_177M_3_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'bd_smoke_zynq_ultra_ps_e_0_0' declared at 'C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_zynq_ultra_ps_e_0_0_stub.vhdl:6' bound to instance 'zynq_ultra_ps_e_0' of component 'bd_smoke_zynq_ultra_ps_e_0_0' [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:603]
+INFO: [Synth 8-638] synthesizing module 'bd_smoke_zynq_ultra_ps_e_0_0' [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/.Xil/Vivado-1552-DESKTOP-PV75K48/realtime/bd_smoke_zynq_ultra_ps_e_0_0_stub.vhdl:60]
+INFO: [Synth 8-256] done synthesizing module 'bd_smoke' (0#1) [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/synth/bd_smoke.vhd:354]
+INFO: [Synth 8-256] done synthesizing module 'bd_smoke_wrapper' (0#1) [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/hdl/bd_smoke_wrapper.vhd:18]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_AIGOFK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_AIGOFK is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module bd_smoke_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module bd_smoke_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:47 . Memory (MB): peak = 2136.656 ; gain = 297.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:49 . Memory (MB): peak = 2154.582 ; gain = 315.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:49 . Memory (MB): peak = 2154.582 ; gain = 315.125
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 2162.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_zynq_ultra_ps_e_0_0/bd_smoke_zynq_ultra_ps_e_0_0/bd_smoke_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'bd_smoke_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2187.398 ; gain = 6.305
+Finished Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_zynq_ultra_ps_e_0_0/bd_smoke_zynq_ultra_ps_e_0_0/bd_smoke_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'bd_smoke_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/bd_smoke_add_axi_0_0/bd_smoke_add_axi_0_0_in_context.xdc] for cell 'bd_smoke_i/add_axi_0'
+Finished Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_add_axi_0_0/bd_smoke_add_axi_0_0/bd_smoke_add_axi_0_0_in_context.xdc] for cell 'bd_smoke_i/add_axi_0'
+Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0_in_context.xdc] for cell 'bd_smoke_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0/bd_smoke_ps8_0_axi_periph_imp_auto_pc_0_in_context.xdc] for cell 'bd_smoke_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_rst_ps8_0_177M_3/bd_smoke_rst_ps8_0_177M_3/bd_smoke_rst_ps8_0_177M_3_in_context.xdc] for cell 'bd_smoke_i/rst_ps8_0_177M'
+Finished Parsing XDC File [c:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.gen/sources_1/bd/bd_smoke/ip/bd_smoke_rst_ps8_0_177M_3/bd_smoke_rst_ps8_0_177M_3/bd_smoke_rst_ps8_0_177M_3_in_context.xdc] for cell 'bd_smoke_i/rst_ps8_0_177M'
+Parsing XDC File [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2187.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2187.398 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:02:20 . Memory (MB): peak = 2187.398 ; gain = 347.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:02:21 . Memory (MB): peak = 2187.398 ; gain = 347.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for bd_smoke_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_smoke_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_smoke_i/add_axi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_smoke_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_smoke_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_smoke_i/rst_ps8_0_177M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:02:21 . Memory (MB): peak = 2187.398 ; gain = 347.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:02:23 . Memory (MB): peak = 2187.398 ; gain = 347.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ACLK in module bd_smoke_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module bd_smoke_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module bd_smoke_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module bd_smoke_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:29 . Memory (MB): peak = 2187.398 ; gain = 347.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:03:40 . Memory (MB): peak = 2855.801 ; gain = 1016.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:03:40 . Memory (MB): peak = 2855.801 ; gain = 1016.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:03:41 . Memory (MB): peak = 2865.797 ; gain = 1026.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:03:48 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:03:48 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:03:49 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:03:49 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:03:49 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:03:49 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |bd_smoke_ps8_0_axi_periph_imp_auto_pc_0 |         1|
+|2     |bd_smoke_add_axi_0_0                    |         1|
+|3     |bd_smoke_rst_ps8_0_177M_3               |         1|
+|4     |bd_smoke_zynq_ultra_ps_e_0_0            |         1|
++------+----------------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------------+------+
+|      |Cell                                         |Count |
++------+---------------------------------------------+------+
+|1     |bd_smoke_add_axi_0_0_bbox                    |     1|
+|2     |bd_smoke_ps8_0_axi_periph_imp_auto_pc_0_bbox |     1|
+|3     |bd_smoke_rst_ps8_0_177M_3_bbox               |     1|
+|4     |bd_smoke_zynq_ultra_ps_e_0_0_bbox            |     1|
++------+---------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:03:50 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:02:33 . Memory (MB): peak = 3081.891 ; gain = 1209.617
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:03:54 . Memory (MB): peak = 3081.891 ; gain = 1242.434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3081.891 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3081.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ff22138c
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:05:30 . Memory (MB): peak = 3081.891 ; gain = 2380.531
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls_smoke/project_1/project_1.runs/synth_1/bd_smoke_wrapper.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 3081.891 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_smoke_wrapper_utilization_synth.rpt -pb bd_smoke_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 18 22:25:34 2026...

@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../../project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi_CTRL_s_axi.vhd" \
+"../../../../project_1.gen/sources_1/bd/bd_smoke/ipshared/f3d8/hdl/vhdl/add_axi.vhd" \
+"../../../bd/bd_smoke/ip/bd_smoke_add_axi_0_0/sim/bd_smoke_add_axi_0_0.vhd" \
+"../../../bd/bd_smoke/ip/bd_smoke_rst_ps8_0_177M_3/sim/bd_smoke_rst_ps8_0_177M_3.vhd" \
+"../../../bd/bd_smoke/sim/bd_smoke.vhd" \
+
+# Do not sort compile order
+nosort

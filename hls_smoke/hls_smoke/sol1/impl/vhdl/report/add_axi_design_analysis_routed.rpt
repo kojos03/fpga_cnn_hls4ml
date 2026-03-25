@@ -1,0 +1,96 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Mar  5 02:32:12 2026
+| Host         : DESKTOP-0NKI8SO running 64-bit major release  (build 9200)
+| Command      : report_design_analysis -file ./report/add_axi_design_analysis_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu7ev
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+3. Placer Final Level Congestion Reporting
+4. Router Initial Congestion
+5. SLR Net Crossing Reporting
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+------------------------------+
+|      Characteristics      |            Path #1           |
++---------------------------+------------------------------+
+| Requirement               | inf                          |
+| Path Delay                | 0.942                        |
+| Logic Delay               | 0.132(15%)                   |
+| Net Delay                 | 0.810(85%)                   |
+| Clock Skew                | 0.000                        |
+| Slack                     | inf                          |
+| Clock Uncertainty         | 0.000                        |
+| Clock Relationship        | Safely Timed                 |
+| Clock Delay Group         | Same Clock                   |
+| Logic Levels              | 2                            |
+| Routes                    | 2                            |
+| Logical Path              | FDRE/C-(9)-LUT6-(16)-FDRE/CE |
+| Start Point Clock         |                              |
+| End Point Clock           |                              |
+| DSP Block                 | None                         |
+| RAM Registers             | None-None                    |
+| IO Crossings              | 0                            |
+| SLR Crossings             | 0                            |
+| PBlocks                   | 0                            |
+| High Fanout               | 16                           |
+| Dont Touch                | 0                            |
+| Mark Debug                | 0                            |
+| Start Point Pin Primitive | FDRE/C                       |
+| End Point Pin Primitive   | FDRE/CE                      |
+| Start Point Pin           | FSM_onehot_wstate_reg[2]/C   |
+| End Point Pin             | int_b_reg[1]/CE              |
++---------------------------+------------------------------+
+* Bounding box calculated as % of dimensions for the target device (2770, 746)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+----+----+-----+----+
+| End Point Clock | Requirement |  0 |  1 |  2  |  3 |
++-----------------+-------------+----+----+-----+----+
+| (none)          | 0.000ns     | 68 | 39 | 119 | 25 |
++-----------------+-------------+----+----+-----+----+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 251 paths
+
+
+3. Placer Final Level Congestion Reporting
+------------------------------------------
+
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | MUXF | RAMB | URAM | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+* No congestion windows are found above level 5
+
+
+4. Router Initial Congestion
+----------------------------
+
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+-------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | MUXF | RAMB | URAM | DSP | CARRY | SRL | Cell Names | Sub Windows |
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+-------------+
+* No effective congestion windows are found above level 5
+
+
+5. SLR Net Crossing Reporting
+-----------------------------
+
++------------+-----------------------------+
+| Cell Names | Number of Nets crossing SLR |
++------------+-----------------------------+
+* The current part is not an SSI device
+
+

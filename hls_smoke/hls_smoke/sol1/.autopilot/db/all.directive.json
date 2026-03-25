@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "add_axi",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "add_axi"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/fpga_cnn_hls4ml/hls_smoke/run_hls.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

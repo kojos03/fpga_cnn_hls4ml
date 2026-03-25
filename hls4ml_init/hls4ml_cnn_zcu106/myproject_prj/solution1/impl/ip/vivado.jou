@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Mar 23 21:38:42 2026
+# Process ID         : 11044
+# Current directory  : C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls4ml_init/hls4ml_cnn_zcu106/myproject_prj/solution1/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls4ml_init/hls4ml_cnn_zcu106/myproject_prj/solution1/impl/ip/vivado.log
+# Journal file       : C:/Users/OmilosNeonTexn/Desktop/fpga_cnn_hls4ml/hls4ml_init/hls4ml_cnn_zcu106/myproject_prj/solution1/impl/ip\vivado.jou
+# Running On         : DESKTOP-PV75K48
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-2600S CPU @ 2.80GHz
+# CPU Frequency      : 2794 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 6330 MB
+# Swap memory        : 15888 MB
+# Total Virtual      : 22218 MB
+# Available Virtual  : 13256 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

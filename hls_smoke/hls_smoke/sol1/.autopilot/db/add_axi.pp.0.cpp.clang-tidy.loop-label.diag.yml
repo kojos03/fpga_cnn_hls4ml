@@ -1,0 +1,49 @@
+---
+MainSourceFile:  'C:/fpga_cnn_hls4ml/hls_smoke/hls_smoke/sol1/.autopilot/db/add_axi.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        'C:\Xilinx\xilinx1\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\fpga_cnn_hls4ml\hls_smoke\hls_smoke\sol1\.autopilot\db\add_axi.pp.0.cpp'
+        Offset:          55397
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\xilinx1\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\fpga_cnn_hls4ml\hls_smoke\hls_smoke\sol1\.autopilot\db\add_axi.pp.0.cpp'
+        Offset:          282987
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\xilinx1\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\fpga_cnn_hls4ml\hls_smoke\hls_smoke\sol1\.autopilot\db\add_axi.pp.0.cpp'
+        Offset:          283451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\xilinx1\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\fpga_cnn_hls4ml\hls_smoke\hls_smoke\sol1\.autopilot\db\add_axi.pp.0.cpp'
+        Offset:          283916
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\xilinx1\Vitis_HLS\2024.1\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\fpga_cnn_hls4ml\hls_smoke\hls_smoke\sol1\.autopilot\db\add_axi.pp.0.cpp'
+        Offset:          567516
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+...

@@ -1,0 +1,228 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_array_ap_fixed_4u_array_ap_fixed_39_19_5_3_0_8u_config6_s'
+================================================================
+* Date:           Mon Mar 23 21:37:54 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.289 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       14|       14|  70.000 ns|  70.000 ns|   14|   14|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%data_loc = alloca i64 1"   --->   Operation 6 'alloca' 'data_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%data_8_loc = alloca i64 1"   --->   Operation 7 'alloca' 'data_8_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%data_9_loc = alloca i64 1"   --->   Operation 8 'alloca' 'data_9_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%data_10_loc = alloca i64 1"   --->   Operation 9 'alloca' 'data_10_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%data_11_loc = alloca i64 1"   --->   Operation 10 'alloca' 'data_11_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%data_12_loc = alloca i64 1"   --->   Operation 11 'alloca' 'data_12_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%data_13_loc = alloca i64 1"   --->   Operation 12 'alloca' 'data_13_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%data_14_loc = alloca i64 1"   --->   Operation 13 'alloca' 'data_14_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%data_15_loc = alloca i64 1"   --->   Operation 14 'alloca' 'data_15_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%data_16_loc = alloca i64 1"   --->   Operation 15 'alloca' 'data_16_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%data_17_loc = alloca i64 1"   --->   Operation 16 'alloca' 'data_17_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%data_18_loc = alloca i64 1"   --->   Operation 17 'alloca' 'data_18_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%data_19_loc = alloca i64 1"   --->   Operation 18 'alloca' 'data_19_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%data_20_loc = alloca i64 1"   --->   Operation 19 'alloca' 'data_20_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%data_21_loc = alloca i64 1"   --->   Operation 20 'alloca' 'data_21_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%data_22_loc = alloca i64 1"   --->   Operation 21 'alloca' 'data_22_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%data_23_loc = alloca i64 1"   --->   Operation 22 'alloca' 'data_23_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%data_24_loc = alloca i64 1"   --->   Operation 23 'alloca' 'data_24_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%data_25_loc = alloca i64 1"   --->   Operation 24 'alloca' 'data_25_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%data_26_loc = alloca i64 1"   --->   Operation 25 'alloca' 'data_26_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%data_27_loc = alloca i64 1"   --->   Operation 26 'alloca' 'data_27_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%data_28_loc = alloca i64 1"   --->   Operation 27 'alloca' 'data_28_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%data_29_loc = alloca i64 1"   --->   Operation 28 'alloca' 'data_29_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%data_30_loc = alloca i64 1"   --->   Operation 29 'alloca' 'data_30_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%data_31_loc = alloca i64 1"   --->   Operation 30 'alloca' 'data_31_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%data_32_loc = alloca i64 1"   --->   Operation 31 'alloca' 'data_32_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%data_33_loc = alloca i64 1"   --->   Operation 32 'alloca' 'data_33_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%data_34_loc = alloca i64 1"   --->   Operation 33 'alloca' 'data_34_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%data_35_loc = alloca i64 1"   --->   Operation 34 'alloca' 'data_35_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%data_36_loc = alloca i64 1"   --->   Operation 35 'alloca' 'data_36_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%data_37_loc = alloca i64 1"   --->   Operation 36 'alloca' 'data_37_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%data_38_loc = alloca i64 1"   --->   Operation 37 'alloca' 'data_38_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%data_39_loc = alloca i64 1"   --->   Operation 38 'alloca' 'data_39_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%data_40_loc = alloca i64 1"   --->   Operation 39 'alloca' 'data_40_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%data_41_loc = alloca i64 1"   --->   Operation 40 'alloca' 'data_41_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%data_42_loc = alloca i64 1"   --->   Operation 41 'alloca' 'data_42_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dense<array,array<ap_fixed<39,19,5,3,0>,8u>,config6>_Pipeline_DataPrepare, i64 %layer4_out, i16 %data_42_loc, i16 %data_41_loc, i16 %data_40_loc, i16 %data_39_loc, i16 %data_38_loc, i16 %data_37_loc, i16 %data_36_loc, i16 %data_35_loc, i16 %data_34_loc, i16 %data_33_loc, i16 %data_32_loc, i16 %data_31_loc, i16 %data_30_loc, i16 %data_29_loc, i16 %data_28_loc, i16 %data_27_loc, i16 %data_26_loc, i16 %data_25_loc, i16 %data_24_loc, i16 %data_23_loc, i16 %data_22_loc, i16 %data_21_loc, i16 %data_20_loc, i16 %data_19_loc, i16 %data_18_loc, i16 %data_17_loc, i16 %data_16_loc, i16 %data_15_loc, i16 %data_14_loc, i16 %data_13_loc, i16 %data_12_loc, i16 %data_11_loc, i16 %data_10_loc, i16 %data_9_loc, i16 %data_8_loc, i16 %data_loc"   --->   Operation 42 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.82>
+ST_2 : Operation 43 [1/2] (1.82ns)   --->   "%call_ln0 = call void @dense<array,array<ap_fixed<39,19,5,3,0>,8u>,config6>_Pipeline_DataPrepare, i64 %layer4_out, i16 %data_42_loc, i16 %data_41_loc, i16 %data_40_loc, i16 %data_39_loc, i16 %data_38_loc, i16 %data_37_loc, i16 %data_36_loc, i16 %data_35_loc, i16 %data_34_loc, i16 %data_33_loc, i16 %data_32_loc, i16 %data_31_loc, i16 %data_30_loc, i16 %data_29_loc, i16 %data_28_loc, i16 %data_27_loc, i16 %data_26_loc, i16 %data_25_loc, i16 %data_24_loc, i16 %data_23_loc, i16 %data_22_loc, i16 %data_21_loc, i16 %data_20_loc, i16 %data_19_loc, i16 %data_18_loc, i16 %data_17_loc, i16 %data_16_loc, i16 %data_15_loc, i16 %data_14_loc, i16 %data_13_loc, i16 %data_12_loc, i16 %data_11_loc, i16 %data_10_loc, i16 %data_9_loc, i16 %data_8_loc, i16 %data_loc"   --->   Operation 43 'call' 'call_ln0' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 3.28>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%fence_ln87 = fence void @_ssdm_op_Fence, i64 %layer4_out, i32 4294967295, i312 %layer6_out" [firmware/nnet_utils/nnet_dense_stream.h:87]   --->   Operation 44 'fence' 'fence_ln87' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%data_42_loc_load = load i16 %data_42_loc"   --->   Operation 45 'load' 'data_42_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%data_41_loc_load = load i16 %data_41_loc"   --->   Operation 46 'load' 'data_41_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%data_40_loc_load = load i16 %data_40_loc"   --->   Operation 47 'load' 'data_40_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%data_39_loc_load = load i16 %data_39_loc"   --->   Operation 48 'load' 'data_39_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%data_38_loc_load = load i16 %data_38_loc"   --->   Operation 49 'load' 'data_38_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%data_37_loc_load = load i16 %data_37_loc"   --->   Operation 50 'load' 'data_37_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%data_36_loc_load = load i16 %data_36_loc"   --->   Operation 51 'load' 'data_36_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%data_35_loc_load = load i16 %data_35_loc"   --->   Operation 52 'load' 'data_35_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%data_34_loc_load = load i16 %data_34_loc"   --->   Operation 53 'load' 'data_34_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%data_33_loc_load = load i16 %data_33_loc"   --->   Operation 54 'load' 'data_33_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%data_32_loc_load = load i16 %data_32_loc"   --->   Operation 55 'load' 'data_32_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%data_31_loc_load = load i16 %data_31_loc"   --->   Operation 56 'load' 'data_31_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%data_30_loc_load = load i16 %data_30_loc"   --->   Operation 57 'load' 'data_30_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%data_29_loc_load = load i16 %data_29_loc"   --->   Operation 58 'load' 'data_29_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%data_28_loc_load = load i16 %data_28_loc"   --->   Operation 59 'load' 'data_28_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%data_27_loc_load = load i16 %data_27_loc"   --->   Operation 60 'load' 'data_27_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%data_26_loc_load = load i16 %data_26_loc"   --->   Operation 61 'load' 'data_26_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%data_25_loc_load = load i16 %data_25_loc"   --->   Operation 62 'load' 'data_25_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%data_24_loc_load = load i16 %data_24_loc"   --->   Operation 63 'load' 'data_24_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%data_23_loc_load = load i16 %data_23_loc"   --->   Operation 64 'load' 'data_23_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%data_22_loc_load = load i16 %data_22_loc"   --->   Operation 65 'load' 'data_22_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%data_21_loc_load = load i16 %data_21_loc"   --->   Operation 66 'load' 'data_21_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%data_20_loc_load = load i16 %data_20_loc"   --->   Operation 67 'load' 'data_20_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%data_19_loc_load = load i16 %data_19_loc"   --->   Operation 68 'load' 'data_19_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%data_18_loc_load = load i16 %data_18_loc"   --->   Operation 69 'load' 'data_18_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%data_17_loc_load = load i16 %data_17_loc"   --->   Operation 70 'load' 'data_17_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%data_16_loc_load = load i16 %data_16_loc"   --->   Operation 71 'load' 'data_16_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%data_15_loc_load = load i16 %data_15_loc"   --->   Operation 72 'load' 'data_15_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%data_14_loc_load = load i16 %data_14_loc"   --->   Operation 73 'load' 'data_14_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%data_13_loc_load = load i16 %data_13_loc"   --->   Operation 74 'load' 'data_13_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%data_12_loc_load = load i16 %data_12_loc"   --->   Operation 75 'load' 'data_12_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "%data_11_loc_load = load i16 %data_11_loc"   --->   Operation 76 'load' 'data_11_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%data_10_loc_load = load i16 %data_10_loc"   --->   Operation 77 'load' 'data_10_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (0.00ns)   --->   "%data_9_loc_load = load i16 %data_9_loc"   --->   Operation 78 'load' 'data_9_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%data_8_loc_load = load i16 %data_8_loc"   --->   Operation 79 'load' 'data_8_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%data_loc_load = load i16 %data_loc"   --->   Operation 80 'load' 'data_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 81 [3/3] (3.28ns)   --->   "%call_ret = call i312 @dense_latency_wrapper<ap_fixed,ap_fixed<39,19,5,3,0>,config6>, i16 %data_35_loc_load, i16 %data_36_loc_load, i16 %data_37_loc_load, i16 %data_38_loc_load, i16 %data_31_loc_load, i16 %data_32_loc_load, i16 %data_33_loc_load, i16 %data_34_loc_load, i16 %data_27_loc_load, i16 %data_28_loc_load, i16 %data_29_loc_load, i16 %data_30_loc_load, i16 %data_23_loc_load, i16 %data_24_loc_load, i16 %data_25_loc_load, i16 %data_26_loc_load, i16 %data_19_loc_load, i16 %data_20_loc_load, i16 %data_21_loc_load, i16 %data_22_loc_load, i16 %data_15_loc_load, i16 %data_16_loc_load, i16 %data_17_loc_load, i16 %data_18_loc_load, i16 %data_11_loc_load, i16 %data_12_loc_load, i16 %data_13_loc_load, i16 %data_14_loc_load, i16 %data_loc_load, i16 %data_8_loc_load, i16 %data_9_loc_load, i16 %data_10_loc_load, i16 %data_39_loc_load, i16 %data_40_loc_load, i16 %data_41_loc_load, i16 %data_42_loc_load" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 81 'call' 'call_ret' <Predicate = true> <Delay = 3.28> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 3.28>
+ST_4 : Operation 82 [2/3] (3.28ns)   --->   "%call_ret = call i312 @dense_latency_wrapper<ap_fixed,ap_fixed<39,19,5,3,0>,config6>, i16 %data_35_loc_load, i16 %data_36_loc_load, i16 %data_37_loc_load, i16 %data_38_loc_load, i16 %data_31_loc_load, i16 %data_32_loc_load, i16 %data_33_loc_load, i16 %data_34_loc_load, i16 %data_27_loc_load, i16 %data_28_loc_load, i16 %data_29_loc_load, i16 %data_30_loc_load, i16 %data_23_loc_load, i16 %data_24_loc_load, i16 %data_25_loc_load, i16 %data_26_loc_load, i16 %data_19_loc_load, i16 %data_20_loc_load, i16 %data_21_loc_load, i16 %data_22_loc_load, i16 %data_15_loc_load, i16 %data_16_loc_load, i16 %data_17_loc_load, i16 %data_18_loc_load, i16 %data_11_loc_load, i16 %data_12_loc_load, i16 %data_13_loc_load, i16 %data_14_loc_load, i16 %data_loc_load, i16 %data_8_loc_load, i16 %data_9_loc_load, i16 %data_10_loc_load, i16 %data_39_loc_load, i16 %data_40_loc_load, i16 %data_41_loc_load, i16 %data_42_loc_load" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 82 'call' 'call_ret' <Predicate = true> <Delay = 3.28> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 2.51>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i312 %layer6_out, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0, i32 0"   --->   Operation 83 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %layer4_out, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0, i32 0"   --->   Operation 84 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 85 [1/3] (0.68ns)   --->   "%call_ret = call i312 @dense_latency_wrapper<ap_fixed,ap_fixed<39,19,5,3,0>,config6>, i16 %data_35_loc_load, i16 %data_36_loc_load, i16 %data_37_loc_load, i16 %data_38_loc_load, i16 %data_31_loc_load, i16 %data_32_loc_load, i16 %data_33_loc_load, i16 %data_34_loc_load, i16 %data_27_loc_load, i16 %data_28_loc_load, i16 %data_29_loc_load, i16 %data_30_loc_load, i16 %data_23_loc_load, i16 %data_24_loc_load, i16 %data_25_loc_load, i16 %data_26_loc_load, i16 %data_19_loc_load, i16 %data_20_loc_load, i16 %data_21_loc_load, i16 %data_22_loc_load, i16 %data_15_loc_load, i16 %data_16_loc_load, i16 %data_17_loc_load, i16 %data_18_loc_load, i16 %data_11_loc_load, i16 %data_12_loc_load, i16 %data_13_loc_load, i16 %data_14_loc_load, i16 %data_loc_load, i16 %data_8_loc_load, i16 %data_9_loc_load, i16 %data_10_loc_load, i16 %data_39_loc_load, i16 %data_40_loc_load, i16 %data_41_loc_load, i16 %data_42_loc_load" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 85 'call' 'call_ret' <Predicate = true> <Delay = 0.68> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%res = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 86 'extractvalue' 'res' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%res_1 = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 87 'extractvalue' 'res_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%res_2 = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 88 'extractvalue' 'res_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%res_3 = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 89 'extractvalue' 'res_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (0.00ns)   --->   "%res_4 = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 90 'extractvalue' 'res_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%res_5 = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 91 'extractvalue' 'res_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 92 [1/1] (0.00ns)   --->   "%res_6 = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 92 'extractvalue' 'res_6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 93 [1/1] (0.00ns)   --->   "%res_7 = extractvalue i312 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 93 'extractvalue' 'res_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 94 [1/1] (0.00ns)   --->   "%p_0 = bitconcatenate i312 @_ssdm_op_BitConcatenate.i312.i39.i39.i39.i39.i39.i39.i39.i39, i39 %res_7, i39 %res_6, i39 %res_5, i39 %res_4, i39 %res_3, i39 %res_2, i39 %res_1, i39 %res" [firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100]   --->   Operation 94 'bitconcatenate' 'p_0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 95 [1/1] ( I:1.82ns O:1.82ns )   --->   "%write_ln77 = write void @_ssdm_op_Write.ap_fifo.volatile.i312P0A, i312 %layer6_out, i312 %p_0" [firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100]   --->   Operation 95 'write' 'write_ln77' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 312> <Depth = 1> <FIFO>
+ST_5 : Operation 96 [1/1] (0.00ns)   --->   "%ret_ln101 = ret" [firmware/nnet_utils/nnet_dense_stream.h:101]   --->   Operation 96 'ret' 'ret_ln101' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 1.825ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'dense<array,array<ap_fixed<39,19,5,3,0>,8u>,config6>_Pipeline_DataPrepare' [41]  (1.825 ns)
+
+ <State 3>: 3.289ns
+The critical path consists of the following:
+	'load' operation 16 bit ('data_42_loc_load') on local variable 'data_42_loc' [43]  (0.000 ns)
+	'call' operation 312 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency_wrapper<ap_fixed,ap_fixed<39,19,5,3,0>,config6>' [79]  (3.289 ns)
+
+ <State 4>: 3.289ns
+The critical path consists of the following:
+	'call' operation 312 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency_wrapper<ap_fixed,ap_fixed<39,19,5,3,0>,config6>' [79]  (3.289 ns)
+
+ <State 5>: 2.512ns
+The critical path consists of the following:
+	'call' operation 312 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency_wrapper<ap_fixed,ap_fixed<39,19,5,3,0>,config6>' [79]  (0.687 ns)
+	fifo write operation ('write_ln77', firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100) on port 'layer6_out' (firmware/nnet_utils/nnet_dense_stream.h:77->firmware/nnet_utils/nnet_dense_stream.h:100) [89]  (1.825 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
