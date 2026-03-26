@@ -11,3 +11,10 @@ __pycache__/
 
 # Build and logs
 *.log
+
+# Vivado generated outputs
+*.runs/
+*.cache/
+*.hw/
+.Xil/
+*.jou
