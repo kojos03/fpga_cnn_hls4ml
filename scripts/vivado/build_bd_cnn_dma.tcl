@@ -15,6 +15,24 @@ if {[llength [get_projects -quiet]] == 0} {
   }
 }
 
+# Add required IP repositories for this project.
+set script_dir [file dirname [file normalize [info script]]]
+set myproject_repo [file normalize [file join $script_dir .. .. hls4ml_init hls4ml_cnn_zcu106 myproject_prj solution1 impl ip]]
+set tlast_repo [file normalize [file join $script_dir .. .. ip_repo tlast_wrap]]
+
+set existing_repos [get_property ip_repo_paths [current_project]]
+foreach candidate [list $myproject_repo $tlast_repo] {
+  if {[file exists $candidate]} {
+    if {[lsearch -exact $existing_repos $candidate] < 0} {
+      set existing_repos [concat $existing_repos [list $candidate]]
+    }
+  } else {
+    puts "WARNING: IP repo not found: $candidate"
+  }
+}
+set_property ip_repo_paths $existing_repos [current_project]
+update_ip_catalog
+
 proc maybe_set_ps_cfg {cell prop value} {
   if {[lsearch -exact [list_property $cell] $prop] >= 0} {
     set_property -dict [list $prop $value] $cell
@@ -82,6 +100,7 @@ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:* xlconstant_locked
 set_property -dict [list CONFIG.CONST_WIDTH {1} CONFIG.CONST_VAL {1}] [get_bd_cells xlconstant_locked]
 
 create_bd_cell -type ip -vlnv xilinx.com:hls:myproject:1.0 myproject_0
+create_bd_cell -type ip -vlnv xilinx.com:hls:tlast_wrap:1.0 tlast_wrap_0
 create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:* xlconstant_start
 set_property -dict [list CONFIG.CONST_WIDTH {1} CONFIG.CONST_VAL {1}] [get_bd_cells xlconstant_start]
 
@@ -128,6 +147,8 @@ connect_net_if_pins_exist zynq_ultra_ps_e_0/pl_clk0 zynq_ultra_ps_e_0/saxihp1_fp
 connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins myproject_0/ap_clk]
 connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins myproject_0/ap_rst_n]
 connect_bd_net [get_bd_pins xlconstant_start/dout] [get_bd_pins myproject_0/ap_start]
+connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins tlast_wrap_0/ap_clk]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins tlast_wrap_0/ap_rst_n]
 
 connect_net_if_pins_exist zynq_ultra_ps_e_0/pl_clk0 axi_dma_0/s_axi_lite_aclk
 connect_net_if_pins_exist zynq_ultra_ps_e_0/pl_clk0 axi_dma_0/m_axi_mm2s_aclk
@@ -151,9 +172,11 @@ connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_MM2S] [get_bd_intf_pins sm
 connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] [get_bd_intf_pins smartconnect_hp0_0/S01_AXI]
 connect_bd_intf_net [get_bd_intf_pins smartconnect_hp0_0/M00_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HP0_FPD]
 
-# AXI-Stream connections
-connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins myproject_0/inp]
-connect_bd_intf_net [get_bd_intf_pins myproject_0/layer9_out] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+# AXI-Stream connections through TLAST wrapper
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins tlast_wrap_0/s_axis_in]
+connect_bd_intf_net [get_bd_intf_pins tlast_wrap_0/m_axis_to_nn] [get_bd_intf_pins myproject_0/inp]
+connect_bd_intf_net [get_bd_intf_pins myproject_0/layer9_out] [get_bd_intf_pins tlast_wrap_0/s_axis_from_nn]
+connect_bd_intf_net [get_bd_intf_pins tlast_wrap_0/m_axis_out] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
 
 # Interrupts
 connect_bd_net [get_bd_pins axi_dma_0/mm2s_introut] [get_bd_pins xlconcat_irq_0/In0]
